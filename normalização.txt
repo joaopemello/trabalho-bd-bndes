@@ -1,0 +1,53 @@
+CNAE(
+	*cod_cnae 
+	setor cnae
+	subsetor cnae agrupado
+	subsetor cnae nome	
+	
+
+)
+
+CLIENTE(
+	*cnpj 
+	nome_cliente
+	porte do cliente 
+	natureza_do_clientev
+	produto* (iremos omitir devido a só tratarmos de pre embarque)
+	setor bndes 
+	subsetor bndes
+	arera operacional
+	*cod_municicpio
+	*cod_cnae 
+
+)
+MUNICIPIO(
+	*cod_municipio
+	municipio 
+	uf
+)
+
+Financiamento(
+	
+	valor_desembolsado
+	valor_de_operação
+	fontes_de_recurso_desembolsados
+	modalidade de apoio
+	forma de apoio
+	instrumento financeceiro
+
+	
+	*cnpj_cliente(FK)
+
+	data_de_contratação 
+	situacao_da_operacao 
+)
+
+FINANCEIRA(
+	*cnpj_do_agente_financeiro
+
+	inovação
+	instituicao_financeira_credenciada
+
+)
+
+
